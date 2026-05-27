@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", "Cormorant Garamond", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-background: #F5F2ED;
+  --color-surface-lowest: #FFFFFF;
+  --color-surface-low: #FBF9F6;
+  --color-surface-container: #FAF4EE;
+  --color-surface-highest: #E8E4DC;
+
+  --color-on-surface: #1A1A1A;
+  --color-on-surface-variant: rgba(26, 26, 26, 0.7);
+
+  --color-primary: #1A1A1A;
+  --color-on-primary: #FFFFFF;
+  
+  --color-secondary: #D94F33; /* Terracotta / Vermillion Editorial Accent */
+  --color-secondary-container: rgba(217, 79, 51, 0.1);
+  --color-on-secondary-container: #D94F33;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.border-editorial {
+  border-color: rgba(26, 26, 26, 0.1);
+}
+
+.ambient-shadow {
+  box-shadow: 0 12px 30px rgba(26, 26, 26, 0.04);
+}
+
+.ambient-shadow-lg {
+  box-shadow: 0 24px 50px rgba(26, 26, 26, 0.06);
+}
